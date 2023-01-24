@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "89a72d07-5182-4add-9f02-2ed10e650408",
+		"name": "Store API Express",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8657683"
+	},
+	"item": [
+		{
+			"name": "Get all products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/products?numbericFilters=price>30, rating>=2",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"products"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "john",
+							"disabled": true
+						},
+						{
+							"key": "featured",
+							"value": "false",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "company",
+							"value": "marcos",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "a",
+							"disabled": true
+						},
+						{
+							"key": "sort",
+							"value": "name",
+							"disabled": true
+						},
+						{
+							"key": "fields",
+							"value": "company,rating",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "5",
+							"disabled": true
+						},
+						{
+							"key": "numbericFilters",
+							"value": "price>30, rating>=2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all products  - testing",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/products/statics",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"products",
+						"statics"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
